@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b52a2a">
+<title>Maxi Burguer | Asados & Comidas Rápidas</title>
+<style>
+:root{--red:#c83b35;--dark:#24201d;--cream:#f4ead3;--paper:#fffaf0;--gold:#d7aa57}
+*{box-sizing:border-box} body{margin:0;background:#171412;color:var(--dark);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.hero{min-height:360px;background:linear-gradient(180deg,rgba(25,20,15,.18),rgba(25,20,15,.88)),url("assets/logo.jpg") center/cover;display:flex;align-items:flex-end}
+.hero-inner{width:min(980px,100%);margin:auto;padding:28px 20px;color:#fff;text-shadow:0 2px 10px #000}
+.hero h1{font-family:Georgia,serif;font-size:clamp(42px,10vw,72px);margin:0;color:#fff}
+.hero p{font-size:18px;margin:4px 0}
+.badge{display:inline-block;background:var(--red);padding:7px 12px;border-radius:999px;font-weight:800;margin-top:12px}
+.sticky{position:sticky;top:0;z-index:10;background:#211d1aee;backdrop-filter:blur(8px);padding:10px}
+.nav{max-width:980px;margin:auto;display:flex;gap:8px;overflow:auto}
+.nav a{white-space:nowrap;color:#fff;text-decoration:none;padding:9px 13px;border:1px solid #ffffff33;border-radius:999px;font-weight:700;font-size:14px}
+main{width:min(980px,100%);margin:auto;padding:18px 14px 80px}
+.section{margin:22px 0}
+.section h2{font-family:Georgia,serif;color:#fff;margin:0 0 12px;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{background:var(--paper);border-radius:18px;padding:15px;box-shadow:0 6px 20px #0004;position:relative}
+.card h3{margin:0 65px 6px 0;font-size:17px}
+.card p{margin:0;color:#5f554d;font-size:14px;line-height:1.35}
+.price{position:absolute;right:12px;top:12px;background:var(--red);color:white;padding:5px 8px;border-radius:10px;font-weight:900;font-size:13px}
+.contact{background:linear-gradient(135deg,#b52a2a,#7f1f1f);color:white;border-radius:22px;padding:22px;margin-top:25px}
+.contact h2{margin-top:0}
+.btn{display:inline-block;background:#fff;color:#8d2424;text-decoration:none;padding:11px 15px;border-radius:12px;font-weight:900;margin:5px 5px 0 0}
+.note{font-size:13px;opacity:.9}
+footer{color:#bbb;text-align:center;padding:20px;font-size:13px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.hero{min-height:330px}.card{padding:14px}.hero h1{font-size:48px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <span class="badge">ASADOS & COMIDAS RÁPIDAS</span>
+    <h1>MAXI BURGUER</h1>
+    <p>¡Gracias por preferirnos!</p>
+    <p>📍 Rícaurte &nbsp; · &nbsp; 🕐 Abierto todos los días</p>
+  </div>
+</header>
+
+<div class="sticky"><nav class="nav">
+  <a href="#hamburguesas">🍔 Hamburguesas</a><a href="#carnes">🥩 Carnes</a><a href="#maicitos">🌽 Maicitos</a>
+  <a href="#perros">🌭 Perros</a><a href="#salchipapas">🍟 Salchipapas</a><a href="#picadas">🍖 Picadas</a>
+  <a href="#otros">🍌 Otros</a><a href="#bebidas">🥤 Bebidas</a>
+</nav></div>
+
+<main>
+<section class="section" id="hamburguesas"><h2>🍔 Hamburguesas</h2><div class="grid">
+<div class="card"><span class="price">$20.000</span><h3>Maxi Hamburguesa</h3><p>Doble carne, doble queso, doble tocineta, lechuga, tomate, cebolla, salsas y ripio de papa.</p></div>
+<div class="card"><span class="price">$20.000</span><h3>Hamburguesa Doble Pollo</h3><p>Doble pollo, doble tocineta, doble queso, lechuga, salsas y ripio de papa.</p></div>
+<div class="card"><span class="price">$20.000</span><h3>Hamburguesa Mixta</h3><p>Carne de res, pollo, doble tocineta, doble queso, tomate, cebolla, salsas y ripio de papa.</p></div>
+<div class="card"><span class="price">$14.000</span><h3>Hamburguesa Sencilla de Carne</h3><p>Carne, tocineta, lechuga, tomate, cebolla, queso, salsas y ripio de papa.</p></div>
+<div class="card"><span class="price">$14.000</span><h3>Hamburguesa Sencilla de Pollo</h3><p>Filete de pollo, tocineta, lechuga, tomate, cebolla, queso, salsas y ripio de papa.</p></div>
+<div class="card"><span class="price">$20.000</span><h3>Hamburguesa Doble 500</h3><p>Tocineta, queso cheddar, queso mozarella, pepinillos, ripio, tomate y papas a la francesa.</p></div>
+<div class="card"><span class="price">$22.000</span><h3>Hamburguesa Angus</h3><p>Hamburguesa 250 g, tocineta, queso cheddar, queso tajado, pepinillos, ripio, lechuga, tomate, papas a la francesa y salsas.</p></div>
+<div class="card"><span class="price">$22.000</span><h3>Hamburguesa Americana</h3><p>Pan a la mantequilla, salsa de la casa, cebolla cruda, tocineta, lechuga, tomate, doble carne, doble queso mozzarella, queso cheddar y papas a la francesa.</p></div>
+</div></section>
+
+<section class="section" id="carnes"><h2>🥩 Carnes</h2><div class="grid">
+<div class="card"><span class="price">$30.000</span><h3>Súper Parrilla</h3><p>Carne de res, pechuga de pollo, costilla ahumada, papas a la francesa, maduro y ensalada.</p></div>
+<div class="card"><span class="price">$18.000</span><h3>Costilla a la BBQ</h3><p>Papas a la francesa, maduro y ensalada.</p></div>
+<div class="card"><span class="price">$23.000</span><h3>Carne a la Plancha Encebollada</h3><p>Papas a la francesa, yuca y ensalada.</p></div>
+<div class="card"><span class="price">$23.000</span><h3>Filete de Pollo a la Plancha</h3><p>Papas a la francesa, yuca y ensalada.</p></div>
+<div class="card"><span class="price">$23.000</span><h3>Filete de Cerdo a la Plancha</h3><p>Papas a la francesa, yuca y ensalada.</p></div>
+<div class="card"><span class="price">$26.000</span><h3>Carne a la Plancha + Queso Fundido</h3><p>Papas a la francesa, yuca y ensalada.</p></div>
+</div></section>
+
+<section class="section" id="maicitos"><h2>🌽 Maicitos</h2><div class="grid">
+<div class="card"><span class="price">$18.000</span><h3>Maíz Rancheros</h3><p>Maíz dulce, pollo y carne, tocineta, queso fundido, ripio, lechuga y salsa de la casa.</p></div>
+<div class="card"><span class="price">$9.000</span><h3>Maíz Sencillos</h3><p>Maíz dulce, ripio, lechuga y salsa de la casa.</p></div>
+<div class="card"><span class="price">$12.000</span><h3>Maíz, Tocineta o Salchicha</h3><p>Maíz dulce gratinado con queso, tocineta o salchicha, lechuga, ripio y salsa de la casa.</p></div>
+</div></section>
+
+<section class="section" id="perros"><h2>🌭 Perros Calientes</h2><div class="grid">
+<div class="card"><span class="price">$13.000</span><h3>Perro Ranchero</h3><p>Tocineta, doble queso, salsa, salchicha americana y ripio de papa.</p></div>
+<div class="card"><span class="price">$11.000</span><h3>Perro Caliente</h3><p>Salchicha americana, salsa, queso y ripio de papa.</p></div>
+<div class="card"><span class="price">$15.000</span><h3>Súper Perro</h3><p>Tocineta, queso mozzarella, queso cheddar, salchicha americana, pepinillos, cebolla, salsas y ripio de papa.</p></div>
+</div></section>
+
+<section class="section" id="salchipapas"><h2>🍟 Salchipapas</h2><div class="grid">
+<div class="card"><span class="price">$9.000</span><h3>Salchipapa Sencilla</h3><p>Papas a la francesa y salchicha.</p></div>
+<div class="card"><span class="price">$13.000</span><h3>Salchipapa de Pollo</h3><p>Papas a la francesa, salchicha y queso.</p></div>
+<div class="card"><span class="price">$30.000</span><h3>Salchipapa Monstruosa</h3><p>Papas a la francesa, salchicha, carne, pollo, ripio, queso y salsas.</p></div>
+<div class="card"><span class="price">$40.000</span><h3>Salchipapa Caleña</h3><p>Papas a la francesa, salchicha, carne, lomo de pollo, tocineta, queso y salsas.</p></div>
+</div></section>
+
+<section class="section" id="picadas"><h2>🍖 Picadas</h2><div class="grid">
+<div class="card"><span class="price">$45.000</span><h3>Picada</h3><p>Carne de res, pollo, lomo de cerdo, costilla ahumada, papa a la francesa y maduro.</p></div>
+<div class="card"><span class="price">$55.000</span><h3>Picada</h3><p>Carne de res, pollo, lomo de cerdo, costilla ahumada, papa a la francesa y maduro.</p></div>
+<div class="card"><span class="price">$65.000</span><h3>Picada</h3><p>Carne de res, pollo, lomo de cerdo, costilla ahumada, papa a la francesa y maduro.</p></div>
+<div class="card"><span class="price">$4.000</span><h3>Porción de Papa a la Francesa</h3></div>
+<div class="card"><span class="price">$3.000</span><h3>Porción de Yuca</h3></div>
+<div class="card"><span class="price">$4.000</span><h3>Porción de Tocineta</h3></div>
+<div class="card"><span class="price">$1.000</span><h3>Porción de Queso</h3></div>
+</div></section>
+
+<section class="section" id="otros"><h2>🍌 Otros</h2><div class="grid">
+<div class="card"><span class="price">$5.000</span><h3>Maduro & Queso</h3></div>
+<div class="card"><span class="price">$8.000</span><h3>Maduro, Queso y Tocineta</h3></div>
+</div></section>
+
+<section class="section" id="bebidas"><h2>🥤 Bebidas</h2><div class="card"><h3>Jugos Naturales</h3><p>Mango · Mora · Maracuyá · Guanábana · Milo frío · Café frappé · Limonada de coco · Limonada natural · Limonada cherry · Limonada mango viche · Limonada de vino · Limonada Baileys · Limonada de coco cereza · Limonada de coco maracuyá · Limonada de coco frutos rojos · Limonada de sandía · Hierbabuena · Tamarindo · Piña colada</p><br><h3>Otras bebidas</h3><p>Gaseosa personal · Gaseosa 1.5 ml · Jugos HIT · Jugos del Valle · Productos Postobón · Cervezas</p><p class="note">* Los precios de bebidas no aparecen en la foto suministrada. Se pueden agregar fácilmente.</p></div></section>
+
+<section class="contact">
+<h2>📲 Domicilios en Ricaurte</h2>
+<p>¡Domicilios GRATIS!</p>
+<a class="btn" href="tel:+573117781958">📞 311 778 1958</a>
+<a class="btn" href="https://wa.me/573117781958" target="_blank" rel="noopener">💬 WhatsApp</a>
+<p>💳 Nequi: 318 507 0036</p>
+<p class="note">Síguenos en Facebook: <strong>maxiburguer</strong></p>
+</section>
+</main>
+<footer>MAXI BURGUER · Asados & Comidas Rápidas · Abierto todos los días</footer>
+</body></html>
